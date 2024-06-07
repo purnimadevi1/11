@@ -1,0 +1,195 @@
+:root {
+    --main-background-color: #DAD7CD;
+    --text-color: black;
+    --primary-accent-color: #588157;
+    --secondary-accent-color1: #A3B18A;
+    --secondary-accent-color2: #3A5A40;
+    --secondary-accent-color3: #344e41;
+    scroll-behavior: smooth;
+    }
+    body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+padding: 0;
+line-height: 1.6;
+background-color: var(--main-background-color);
+color: var(--text-color);
+}
+a{
+text-decoration: none;
+}
+header{
+color: var(--text-color);
+display: flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+align-items: center;
+min-height: 20vh;
+min-height: 20svh;
+}
+.logo-container{
+margin: 1rem;
+}
+.button-container{
+margin: 1rem;
+}
+header h1{
+cursor: default;
+font-size: 2.5rem;
+letter-spacing: 0.125rem;
+margin: 1rem;
+}
+nav{
+display: flex;
+flex-wrap: wrap;
+gap: 1rem;
+align-items: center;
+justify-content: center;
+margin: 1rem;
+}
+nav a{
+color: var(--secondary-accent-color3);
+padding: 0 1rem;
+transition: transform 0.5s ease;
+}
+nav a:hover{
+transform: translateY(-5px);
+}
+.btn{
+background-color: var(--secondary-accent-color1);
+color: var(--text-color);
+font-weight: bold;
+border: none;
+font-size: 1rem;
+padding: 0.5em 1em;
+margin: 1rem;
+border-radius: 50px;
+transition: background-color 0.5s ease, box-shadow 0.5s ease, transform 
+0.5s ease, color 0.5s ease;
+}
+.btn:hover{
+background-color: var(--secondary-accent-color2);
+transform: translateY(-5px);
+color: var(--main-background-color);
+box-shadow: 0 6px 10px rgba(52, 78, 65, 0.8);
+}
+.btn:active{
+transform: scale(0.9);
+box-shadow: 0 3px 5px rgba(52, 78, 65, 0.6);
+}
+#about-me{
+min-height: 80vh;
+min-height: 80svh;
+}
+h2{
+padding-top: 4rem;
+padding-bottom: 0.25rem;
+text-align: center;
+}
+.about-container{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+}
+.about-image-container{
+flex: 1;
+max-width: 30%;
+text-align: end;
+object-fit: contain;
+}
+@media screen and (width < 660px) {
+.about-container{
+display: block;
+}
+.about-image-container{
+text-align: center;
+}
+}
+.about-image-container img{
+width: 14rem;
+height: 14rem;
+border-radius: 14rem;
+margin: 1rem;
+}
+.info-container{
+flex: 1;
+text-align: left;
+max-width: 100%;
+padding: 2rem;
+}
+.info-container p{
+width: 100%;
+}
+.grid{
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+gap: 1.25rem;
+padding: 1rem;
+}
+.grid a{
+color: var(--text-color);
+}
+.card{
+padding: 1rem;
+border-radius: 8px;
+box-shadow: 0 5px 10px rgba(52, 78, 65, 0.6);
+background-color: var(--secondary-accent-color1);
+transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 
+0.5s ease, color 0.5s ease;
+}
+.card:hover{
+transform: translateY(-5px);
+background-color: var(--secondary-accent-color2);
+color: var(--main-background-color);
+box-shadow: 0 10px 20px rgba(52, 78, 65, 0.8);
+}
+.card:active{
+transform: scale(0.9);
+}
+.card h3{
+text-align: center;
+}
+.card ul{
+list-style-type: none;
+}
+.project-image-container{
+width: 100%;
+border: dotted;/*remove when image is attached*/
+}
+.card img{
+width: 100%;
+object-fit: contain;
+border-radius: 4px;
+}
+#contact p{
+text-align: center;
+padding: 0 1rem;
+}
+.contact-form{
+display: flex;
+flex-direction: column;
+width: 50%;
+margin: 0 auto;
+}
+.contact-form input, .contact-form textarea{
+padding: 0.8rem 1rem;
+border: 0.1rem solid var(--main-background-color);
+border-radius: 8px;
+margin-bottom: 1rem;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+border-color: var(--secondary-accent-color3);
+}
+.contact-form textarea{
+resize: vertical;
+min-height: 1rem;
+}
+footer{
+background-color: var(--main-background-color);
+text-align: start;
+}
+footer p{
+padding: 0 2rem;
+color: var(--secondary-accent-color3)
+}
